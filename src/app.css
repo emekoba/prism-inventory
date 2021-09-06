@@ -1,6 +1,7 @@
 .app {
 	background: var(--background);
 	height: 100vh;
+	overflow-y: scroll;
 	display: grid;
 	grid-template-columns: auto 1fr;
 	grid-template-rows: 0.3fr 1fr;
