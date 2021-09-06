@@ -27,12 +27,14 @@ function loginUser(email, password, state) {
 
 	const users = JSON.parse(localStorage.getItem("users"));
 
-	Object.keys(users).map((key) => {
-		if (users[key]["email"] == email && users[key]["password"] == password) {
-			exists = true;
-			authUser = { ...users[key], id: key };
-		}
-	});
+	if (users) {
+		Object.keys(users).map((key) => {
+			if (users[key]["email"] == email && users[key]["password"] == password) {
+				exists = true;
+				authUser = { ...users[key], id: key };
+			}
+		});
+	}
 
 	return {
 		...state,
