@@ -1,13 +1,100 @@
+:root {
+	--background: #181920;
+	--accent: white;
+	--border: rgb(43, 43, 43);
+}
+
+@font-face {
+	font-family: avenir;
+	src: url("./resources/fonts/avenir/AvenirLTStd-Book.otf");
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, avenir, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+div,
+textarea,
+input,
+button,
+p,
+h1 {
+	font-family: avenir;
+	letter-spacing: 1.5px;
+	color: white;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+button {
+	outline: none;
+	border: none;
+	transition: 0.1s ease-in-out;
+	background: none;
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.9);
+}
+
+input,
+textarea {
+	outline: none;
+	box-sizing: border-box;
+	border: 1px solid grey;
+}
+
+input {
+	height: 35px;
+	/* width: 100px; */
+	border: 1px solid grey;
+	border-radius: 2px;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.hideScroll::-webkit-scrollbar {
+	scrollbar-color: white;
+	scrollbar-arrow-color: white;
+	display: none;
+}
+.hideScroll::-webkit-scrollbar-track {
+	display: none;
+}
+
+.--fab-type {
+	background: var(--border);
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: grid;
+	place-items: center;
 }

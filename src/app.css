@@ -1,0 +1,13 @@
+.app {
+	background: var(--background);
+	height: 100vh;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 0.3fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+	.app {
+		grid-template-columns: none;
+	}
+}
