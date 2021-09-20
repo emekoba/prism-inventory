@@ -3,15 +3,15 @@
 [website](https://prism-inventorys.herokuapp.com/)
 
 <div style="text-align:center">
-  <img alt="prism preview 1" src=".\prism1.png"/>
+  <img alt="prism preview 1" src=".\src\resources\images\prism1.png"/>
 </div>
 
 <div style="text-align:center">
-  <img alt="prism preview 2" src=".\prism2.png"/>
+  <img alt="prism preview 2" src=".\src\resources\images\prism2.png"/>
 </div>
 
 <div style="text-align:center">
-  <img alt="prism preview 3" src=".\prism3.png"/>
+  <img alt="prism preview 3" src=".\src\resources\images\prism3.png"/>
 </div>
 
 <br/>
